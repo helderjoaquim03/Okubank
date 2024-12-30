@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Css/responsivo.css">
+    <title>Okubankparavoce</title>
+
+</head>
+
+<body>
+    <!-- Parte de Navegação ou cabeça do site -->
+    <nav class="navbar">
+
+        <div class="menu">
+
+
+            <img class="logo1" img src="logookubank/Logotipo.png">
+
+
+
+            <div id="a"> Para você</div>
+
+            <div id="b"> Para o seu negócio</div>
+
+            <a id="c" href="./okuinvest.html"> OkuInvest </a>
+            <a id="c" href="./okubank.html"> Sobre OkuBank </a>
+
+            <!-- <a id="botão" href="login.html"> Login</a> -->
+            <div id="p">
+                <a class="m" href="./paravoce.html?section=abertura">Abertura de Conta</a>
+                <a class="m" href="./paravoce.html?section=cartao">Cartão de Crédito OkuBank</a>
+                <a class="m" href="./paravoce.html?section=aposentadoria">Planejamento da Aposentadoria</a>
+
+            </div>
+            <div id="pa">
+
+                <a class="m" href="./paraseunegocio.html?section=cartao"> Cartão OkuBank </a>
+
+            </div>
+
+        </div>
+
+
+
+    </nav>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#a').click(function () {
+                $('#p').slideToggle('slow');
+            })
+            $('#p').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#a, #p').length) {
+                    $('#p').slideUp('slow');
+                }
+            });
+
+        });
+        $(document).ready(function () {
+            $('#b').click(function () {
+                $('#pa').slideToggle('slow');
+            })
+            $('#pa').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#b, #pa').length) {
+                    $('#pa').slideUp('slow');
+                }
+            });
+
+        });
+
+
+    </script>
+    <!-- Parte do corpo do site -->
+    <header>
+    </header>
+    <!-- A parte media do corpo-->
+    <section style="width: 100%; margin-top: 150px;">
+        <!-- Divs para cada seção -->
+        <div id="abertura" class="section">
+
+            <br>
+            <div class="card1">
+                <div class="card2">
+
+                    <h2>Abra Sua Conta com mais Facilidade</h2>
+                    <br>
+                    <p> Descubra como é simples começar sua jornada financeira com a OkuBank. Oferecemos um processo de
+                        abertura de conta intuitivo e rápido, para que você possa se concentrar no que realmente
+                        importa. A OkuBank trás uma experiência significativa e rápida na abertura de conta, contamos
+                        com um atendimento personalizado na abertura de sua conta.
+                        <strong>Conquiste seus objetivos</strong> com uma conta cheia de benefícios, sem complicações.
+                    </p><br><br>
+                    <a id="botão" href="#" > Quero ter uma Conta</a>
+                </div>
+                <div>
+                    <img class="card-img" src=".//Img/Post Instagram Plano Provedor de Internet Moderno Azul.png">
+                </div>
+
+
+            </div>
+        </div>
+        <br><br>
+        <div id="cartao" class="section">
+
+            <h2> Obtenha o seu Cartão de crédito OkuBank</h2>
+            <br><br>
+            <div class="card1">
+
+                <div class="card2">
+
+                    <h2>Quero ober já o meu cartão de crédito</h2>
+                    <br>
+                    <p>
+                        O cartão de crédito é uma ferramenta financeira que permite realizar pagamentos de forma prática
+                        e segura, com a possibilidade de parcelamento e acesso a benefícios exclusivos. Na Okubank,
+                        transformamos o uso do cartão de crédito em uma experiência inovadora, com soluções
+                        personalizadas, tecnologia avançada e recompensas alinhadas ao seu estilo de vida. Oferecemos
+                        controle total por meio do app, taxas transparentes e um suporte excepcional, criando uma
+                        jornada única e confiável para você.
+                    </p><br><br>
+                    <a id="botão" href="#"> Indisponivel</a>
+                </div>
+                <div>
+                    <img class="card-img" src=".//Img/cartao (1).jpg">
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        <div id="aposentadoria" class="section">
+            <h2>Planeamento da Aposentadoria</h2>
+            <br><br>
+            <div class="card1">
+                <div class="card2">
+
+                    <h2>Garanta seu plano de aposentadoria</h2>
+                    <br>
+                    <p>**Plano de Aposentadoria e a Experiência na Okubank**  
+
+                        Um plano de aposentadoria é uma solução financeira que ajuda você a garantir um futuro tranquilo e seguro, acumulando recursos ao longo do tempo para usufruir na melhor fase da vida. Na Okubank, oferecemos planos personalizados, com flexibilidade de contribuições, rendimentos consistentes e acompanhamento digital em tempo real. Nossa missão é simplificar o planejamento do seu amanhã, proporcionando estabilidade e tranquilidade financeira com confiança e transparência.
+                    </p><br><br>
+                    <a id="botão" href="#" > Indisponivel </a>
+                </div>
+                <div>
+                    <img class="card-img" src=".//Img/famila.png">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="investimento" class="section">
+            <h2>Aprenda a construir um portifolio de investimento</h2>
+            <br><br>
+            <div class="card1">
+                <div class="card2">
+
+                    <h2>Portifolio de Investimento</h2>
+                    <br>
+                    <p> Na nossa plataforma, oferecemos um guia completo para construir um portfólio diversificado e
+                        alinhado aos seus objetivos financeiros. Nosso foco inclui:</p>
+
+                    <p> <strong> Ações: </strong> Identificamos empresas sólidas e oportunidades de crescimento,
+                        fornecendo análises detalhadas para decisões fundamentadas no mercado acionário. </p>
+                    <p> <strong>Títulos e Tesouro Nacional:</strong> Explicamos como esses ativos oferecem segurança e
+                        previsibilidade, além de estratégias para integrar esses investimentos ao seu portfólio.</p>
+                    <p> <strong> Fundos Imobiliários (FIIs):</strong> Mostramos como os FIIs podem gerar renda passiva
+                        consistente, com acesso a empreendimentos imobiliários de alto valor sem precisar gerenciá-los
+                        diretamente. </p>
+                    <p> <strong>Criptomoedas:</strong> Orientamos sobre o mercado de ativos digitais, destacando
+                        oportunidades e melhores práticas para proteger seu capital neste setor em ascensão.</p>
+                    <p> Nosso objetivo é simplificar o processo, oferecer informações confiáveis e ajudá-lo a tomar
+                        decisões informadas para alcançar seus objetivos de investimento.</p>
+                    </p><br><br>
+                    <a id="botão" target="_blank" href="./Okuinvest/okuinvest.html"> Quero Investir</a>
+                </div>
+                <div>
+                    <img class="card-img" src="./Img/Portfólio como  .png">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--A ultima parte do corpo-->
+    <footer>
+        <div class="rodape">
+
+            <br><br>
+            <div class="cardR">
+                <h3>Produtos</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./paravoce.html?section=cartao">Cartões</a></li>
+                    <li><a href="./paravoce.html?section=abertura">Contas</a></li>
+                    <li><a href="./paravoce.html?section=investimento">Investimentos</a></li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="cardR">
+                <h3>Serviços</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./paravoce.html?section=investimento">Consultoria de investimentos</a></li>
+                    <li><a href="./paravoce.html?section=abertura">Abertura de Conta</a></li>
+                    <li><a href="./paravoce.html?section=cartao">Cartões de Créditos</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 OkuBank. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <a class="email"
+        href="mailto:helderjoaquim004@hotmail.com?subject=Ol%C3%A1,+gostaria+de+saber+mais+sobre+como+funciona+a+OkuBank&body=Muito+obrigado+por+entrar+em+contacto,+aguarde...."><img
+            style="height: 27px;" src="./logookubank/email.png" target="blank"> </a>
+
+
+    <script>
+        // Script para exibir a div correta com base no parâmetro da URL
+        window.onload = function () {
+            // Obter o parâmetro "section" da URL
+            const params = new URLSearchParams(window.location.search);
+            const section = params.get('section');
+
+            // Ocultar todas as seções inicialmente
+            const allSections = document.querySelectorAll('.section');
+            allSections.forEach(div => {
+                div.style.display = 'none'; // Esconde todas as seções
+            });
+
+            // Mostrar a seção correspondente ao parâmetro da URL
+            if (section) {
+                const targetDiv = document.getElementById(section);
+                if (targetDiv) {
+                    targetDiv.style.display = 'block'; // Exibe a seção correspondente
+                }
+            }
+        };
+
+    </script>
+</body>
+
+</html>

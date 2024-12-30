@@ -1,0 +1,28 @@
+@media screen and ( max-width: 1005px){
+    .menu{
+        display: none;
+    }
+   .header{
+    padding-top: 50px;
+    height: 370px;
+    
+   }
+   .headline{
+    flex: 100%;
+    margin: 5%;
+   }
+   .img-headline{
+    flex: 100%;
+    margin: 5%;
+   }
+   section{
+    margin-top: 400px;
+   }
+   .card{
+    display: inline-block;
+    width: 100%;
+   }
+   .card1{
+    display: inline-block;
+    width: 100%;
+   }

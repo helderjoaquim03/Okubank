@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Css/responsivo.css">
+    <title>okubankparaseunegocio</title>
+</head>
+<body>
+      <!-- Parte de Navegação ou cabeça do site -->
+      <nav class="navbar">
+
+        <div class="menu">
+            <img class="logo1" img src="logookubank/Logotipo.png">
+
+            <div id="a"> Para você</div>
+
+            <div id="b"> Para o seu negócio</div>
+
+            <a id="c" href="./okuinvest.html"> OkuInvest </a>
+            <a id="c" href="./okubank.html"> Sobre OkuBank </a>
+
+            <a id="botão" href="login.html"> Login</a>
+            <div id="p">
+                <a class="m" href="./paravoce.html?section=abertura">Abertura de Conta</a>
+                <a class="m" href="./paravoce.html?section=cartao">Cartão de Crédito OkuBank</a>
+                <a class="m" href="./paravoce.html?section=aposentadoria">Planejamento da Aposentadoria</a>
+
+            </div>
+            <div id="pa">
+
+                <a class="m" href="./paraseunegocio.html?section=cartao"> Cartão OkuBank </a>
+
+            </div>
+
+        </div>
+
+
+
+    </nav>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#a').click(function () {
+                $('#p').slideToggle('slow');
+            })
+            $('#p').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#a, #p').length) {
+                    $('#p').slideUp('slow');
+                }
+            });
+
+        });
+        $(document).ready(function () {
+            $('#b').click(function () {
+                $('#pa').slideToggle('slow');
+            })
+            $('#pa').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#b, #pa').length) {
+                    $('#pa').slideUp('slow');
+                }
+            });
+
+        });
+
+
+    </script>
+    <!-- Parte do corpo do site -->
+    <header class="header"
+        style=" background-image: url(./Img/ser.png); background-size: cover;">
+        <div style="float: left; margin-left: 0;">
+            <p style="color: white; margin-right: 1000px;"> </p>
+        </div>
+
+    </header>
+    <!-- A parte media do corpo-->
+    <div id="cartao" class="section">
+
+        <br><br>
+        <div class="card1">
+
+            <div class="card2">
+
+                <h2>Quero ober já o meu cartão de crédito</h2>
+                <br>
+                <p> Descubra como é simples começar sua jornada financeira com a OkuBank. Oferecemos um processo de
+                    abertura de conta intuitivo e rápido, para que você possa se concentrar no que realmente
+                    importa. A OkuBank trás uma experiência significativa e rápida na abertura de conta, contamos
+                    com um atendimento personalizado na abertura de sua conta.
+                    <strong>Conquiste seus objetivos</strong> com uma conta cheia de benefícios, sem complicações.
+                </p><br><br
+                <a id="botão" href="#" > Indisponivel </a>
+            </div>
+            <div >
+                <img class="card-img" src=".//Img/cartao (1).jpg">
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <!--A ultima parte do corpo-->
+    <footer>
+        <div class="rodape">
+            <br><br>
+            <div class="cardR">
+    
+                <div class="cardR">
+                    <h3>Produtos</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="./paravoce.html?section=cartao">Cartões</a></li>
+                        <li><a href="./paravoce.html?section=abertura">Contas</a></li>
+                        <li><a href="./paravoce.html?section=investimento">Investimentos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <div class="cardR">
+                <h3>Serviços</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./paravoce.html?section=investimento">Consultoria de investimentos</a></li>
+                    <li><a href="./paravoce.html?section=abertura">Abertura de Conta</a></li>
+                    <li><a href="./paravoce.html?section=cartao">Cartões de Créditos</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 OkuBank. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <a class="email"
+        href="mailto:helderjoaquim004@hotmail.com?subject=Ol%C3%A1,+gostaria+de+saber+mais+sobre+como+funciona+a+OkuBank&body=Muito+obrigado+por+entrar+em+contacto,+aguarde...."><img
+            style="height: 27px;" src="./logookubank/email.png" target="blank"> </a>
+
+
+    <script>
+        // Script para exibir a div correta com base no parâmetro da URL
+        window.onload = function () {
+            // Obter o parâmetro "section" da URL
+            const params = new URLSearchParams(window.location.search);
+            const section = params.get('section');
+
+            // Ocultar todas as seções inicialmente
+            const allSections = document.querySelectorAll('.section');
+            allSections.forEach(div => {
+                div.style.display = 'none'; // Esconde todas as seções
+            });
+
+            // Mostrar a seção correspondente ao parâmetro da URL
+            if (section) {
+                const targetDiv = document.getElementById(section);
+                if (targetDiv) {
+                    targetDiv.style.display = 'block'; // Exibe a seção correspondente
+                }
+            }
+        };
+        
+    </script>
+</body>
+</html>

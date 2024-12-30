@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Css/responsivo.css">
+    <title>Sobre OkuBank</title>
+</head>
+
+<body>
+    <!-- Parte de Navegação ou cabeça do site -->
+    <nav class="navbar">
+
+        <div class="menu">
+
+
+            <img class="logo1" img src="logookubank/Logotipo.png">
+
+
+
+            <div id="a"> Para você</div>
+
+            <div id="b"> Para o seu negócio</div>
+
+            <a id="c" href="./okuinvest.html"> OkuInvest </a>
+            <a id="c" href="./okubank.html"> Sobre OkuBank </a>
+
+            <!-- <a id="botão" href="login.html"> Login</a> -->
+            <div id="p">
+                <a class="m" href="./paravoce.html?section=abertura">Abertura de Conta</a>
+                <a class="m" href="#">Cartão de Crédito OkuBank</a>
+                <a class="m" href="#">Planejamento da Aposentadoria</a>
+
+            </div>
+            <div id="pa">
+
+                <a class="m" href="#"> Cartão OkuBank </a>
+                <a class="m" href="#"> Consultoria e Treinamento </a>
+
+            </div>
+
+        </div>
+
+
+
+    </nav>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#a').click(function () {
+                $('#p').slideToggle('slow');
+            })
+            $('#p').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#a, #p').length) {
+                    $('#p').slideUp('slow');
+                }
+            });
+
+        });
+        $(document).ready(function () {
+            $('#b').click(function () {
+                $('#pa').slideToggle('slow');
+            })
+            $('#pa').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#b, #pa').length) {
+                    $('#pa').slideUp('slow');
+                }
+            });
+
+        });
+
+    </script>
+    <!-- Parte do corpo do site -->
+   <!-- <header class="header"
+        style=" background-image: url(./Img/ser.png); background-size: cover; border: 1px solid rgb(250, 234, 6);">
+        <div style="float: left; margin-left: 0;">
+            <p style="color: white; margin-right: 1000px;"></p>
+        </div>
+
+    </header> -->
+    <!-- A parte media do corpo-->
+    <section style="width: 100%; margin-top: 100px; margin-left: 10px;">
+        <div style="display: flex;">
+            <div
+                style="width: 50%; display: inline; text-align: justify; margin-left: 5%; border-radius: 5px; border: 1px solid rgb(255, 251, 0);padding: 25px">
+
+                <h2>Visão OkuBank</h2>
+                <p> A OkuBank é uma empresa Angolana fundada na perspectiva de trazer o melhor serviço bancários ao
+                    nosso clientes, temos a visão voltada ao sector financeiro, trazendo a diversidade econômica no pais
+                    e não só, os nossos olhos e expectativas estão viradas para África e para a economia Africana. Somos
+                    parte desse mercado por você, e para servir a você. </p>
+
+
+
+            </div>
+
+        </div>
+        <br><br><br>
+        <div style="display: flex;">
+
+            <div
+                style="width: 50%; display: inline; text-align: justify; margin-left: 45%; border-radius: 5px; border: 1px solid rgb(255, 251, 0); padding: 25px; ">
+
+                <h2>Missão OkuBank </h2>
+                <p>Em 2024 começamos a dar luz a uma ideia no mercado financeiro de investimentos, investindo em ações
+                    de fundo imobiliário, em seguida fizemos uma analise no sector bancário vimos que bancos locais
+                    estavam a ter participação no digital, para tornar seu atendimento muito mais eficiente e vimos
+                    também que tínhamos nenhum banco totalmente digital ou pelo menos nenhum que tentou e se manteve
+                    vivo, por essa razão abraçamos este desafio com uma startup bancaria. A nossa missão estava voltada
+                    em manter os nossos valores, a nossa cultura através da expansão nossa economia e do sector
+                    financeiro Africano. </p>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--A ultima parte do corpo-->
+    <footer>
+        <div class="rodape">
+
+            <br><br>
+            <div class="cardR">
+                <h3>Produtos</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./paravoce.html?section=cartao">Cartões</a></li>
+                    <li><a href="./paravoce.html?section=abertura">Contas</a></li>
+                    <li><a href="./Okuinvest/okuinvest.html">Investimentos</a></li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="cardR">
+                <h3>Serviços</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./paravoce.html?section=investimento">Consultoria de investimentos</a></li>
+                    <li><a href="./paravoce.html?section=abertura">Abertura de Conta</a></li>
+                    <li><a href="./paravoce.html?section=cartao">Cartões de Créditos</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 OkuBank. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <a class="email"
+        href="mailto:helderjoaquim004@hotmail.com?subject=Ol%C3%A1,+gostaria+de+saber+mais+sobre+como+funciona+a+OkuBank&body=Muito+obrigado+por+entrar+em+contacto,+aguarde...."><img
+            style="height: 27px;" src="./logookubank/email.png" target="blank"> </a>
+
+
+    <script> </script>
+</body>
+
+</html>

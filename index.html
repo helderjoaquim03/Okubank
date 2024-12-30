@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Okubank o seu banco digital cada vez mais perto de si">
+    <meta name="Keywords" content="Okubank, banco angolano, investimento, consultoria financeira">
+    <meta name="outor" content="Okukula Company">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Css/responsivo.css">
+    <title> OkuBank</title>
+</head>
+
+<body>
+    <!-- Parte de Navegação ou cabeça do site -->
+    <nav class="navbar">
+
+        <div class="menu">
+
+
+            <img class="logo1" img src="logookubank/Logotipo.png">
+           <!-- <a id="botão" target="_blank" href=".//login/login.html"> Login</a> -->
+
+            <br>
+            <div id="a"> Para você</div>
+            <div id="b"> Para o seu negócio</div>
+            <a id="c" href="./okuinvest.html"> OkuInvest </a>
+            <a id="c" href="./okubank.html"> Sobre OkuBank </a>
+  
+            <div id="p">
+                <a class="m" href="./paravoce.html?section=abertura"> Abertura de conta </a>
+                <a class="m" href="./paravoce.html?section=cartao">Cartão de Crédito OkuBank</a>
+                <a class="m" href="./paravoce.html?section=aposentadoria">Planejamento da Aposentadoria</a>
+
+            </div>
+            <div id="pa">
+
+                <a class="m" href="./paraseunegocio.html?section=cartao"> Cartão OkuBank </a>
+                
+
+            </div>
+
+        </div>
+
+
+
+    </nav>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#a').click(function () {
+                $('#p').slideToggle('slow');
+            })
+            $('#p').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#a, #p').length) {
+                    $('#p').slideUp('slow');
+                }
+            });
+
+        });
+        $(document).ready(function () {
+            $('#b').click(function () {
+                $('#pa').slideToggle('slow');
+            })
+            $('#pa').mouseleave(function () {
+                if ($(this).is(':visible')) {
+                    $(this).slideUp('slow');
+                }
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#b, #pa').length) {
+                    $('#pa').slideUp('slow');
+                }
+            });
+
+        });
+
+    </script>
+
+    <!--Parte do corpo do site-->
+    <br><br>
+    <header class="header">
+        <div class="headline">
+            <h1 style="letter-spacing: 5px;">Bem-vindo ao Okubank</h1>
+            <h1> O seu banco 100% online em Angola!</h1>
+            <p style="color: rgb(255, 230, 0); letter-spacing: 3px; padding: 10px;">
+
+                Aseguramos sua vida financeira com uma experiência bancária totalmente digital, segura e acessível onde
+                quer que você esteja </p>
+
+        </div>
+        <div class="img-headline">
+            <h2> Peça seu cartão</h2>
+            <h2> de crédito Okubank</h2>
+            <form>
+                <input class="bilhet" type="text" placeholder=" Digite o nº do seu BI" required>
+                <input class="submit" type="submit" value="Continuar ➡">
+            </form>
+        </div>
+
+    </header>
+    <section>
+        <h2>Conheça os nossos serviços para você</h2>
+        <div class="serviços">
+            <div class="card">
+                <img src="./logookubank/growth.png" height="40px">
+                <h4>Aprenda a investir com a Okubank</h4>
+                <p>Torne-se um investidor ativo e aproveite as oportunidades do mercado financeiro nacional e
+                    internacional.</p>
+                <form>
+                    <button class="Saiba" type="button" data-target="investir">Saiba mais > </button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="./logookubank/credit-card.png" height="40px">
+                <h4>Garanta já o seu cartão de crédito</h4>
+                <p>Garanta já o seu cartão de crédito e aproveite vantagens exclusivas.</p>
+                <button class="Saiba" type="button" data-target="cartao">Saiba mais > </button>
+            </div>
+            <div class="card">
+                <img src="./logookubank/savings.png" height="40px">
+                <h4>Carteira de Poupança da okuBank</h4>
+                <p>Deposite seu dinheiro de forma simples e segura com a Carteira de Poupança da okuBank.</p>
+                <button class="Saiba" type="button" data-target="poupanca">Indisponivel</button>
+            </div>
+            <div class="card">
+                <img src="./logookubank/give-money.png" height="40px">
+                <h4>Consultoria Personalizada na okuBank</h4>
+                <p>Conte com nossa consultoria especializada para planejar o uso do seu empréstimo.</p>
+                <button class="Saiba" type="button" data-target="consultoria">Indisponivel</button>
+            </div>
+            <div class="card">
+                <img src="./logookubank/report.png" height="40px"> 
+                <h4>Relatórios Mensais</h4>
+                <p>Receba relatórios mensais que mostram todas as suas movimentações financeiras.</p>
+                <button class="Saiba" type="button" data-target="relatorios">Saiba mais > </button>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <br>
+    <article>
+        <div class="info" id="investir" style="display: none;">
+            <h3>Aprenda a investir com a Okubank</h3>
+            <br><br>
+            <img style="width: 100%; height: 450px;" src="./Img/pexels-liza-summer-6347729.jpg">
+            <br>
+            <p>Descubra um novo patamar de oportunidades financeiras com a <strong>OkuInvest</strong>, a plataforma de investimentos
+                que conecta você ao mercado imobiliário angolano e global. Seja para diversificar sua carteira ou
+                consolidar seu patrimônio, a <strong>OkuInvest</strong> oferece acesso a projetos sólidos, com alto potencial de
+                rentabilidade e segurança.
+            </p>
+            <p>
+                Com foco no crescente setor imobiliário de Angola, você pode investir em empreendimentos de qualidade,
+                que abrangem desde residências de alto padrão até centros comerciais estrategicamente localizados. Além
+                disso, a OkuInvest não se limita às fronteiras: explore oportunidades em outros mercados promissores,
+                ampliando sua visão e seus retornos.
+            </p>
+            <p>
+                A OkuInvest é uma plataforma 100% digital, que coloca você no controle total dos seus investimentos.
+                Acompanhamos cada etapa do processo com transparência, desde a seleção de projetos até o retorno
+                financeiro. Nossa equipe de especialistas está comprometida em identificar as melhores opções para
+                maximizar seus resultados.
+            </p>
+            <p>
+                Invista com confiança e visão de futuro. Com a <strong>OkuInvest</strong>, você transforma suas metas financeiras em
+                realidade por meio do poder do setor imobiliário, em Angola e além. Comece agora e veja seu dinheiro
+                trabalhar por você!
+            </p>
+            <a id="botão" target="_blank" href="./okuinvest.html"> Quero Investir</a>
+        </div>
+        <div class="info" id="cartao" style="display: none;">
+            
+            <h3>Garanta já o seu cartão de crédito</h3>
+            <br><br>
+            <img style="width: 100%; height: 450px;" src="./Img/cartao (1).jpg">
+            <br>
+            <p>Solicite seu cartão de crédito com vantagens exclusivas e controle total pelo aplicativo.</p>
+            <p>Apresentamos o Cartão de Crédito Recarregável OkuBank, a solução ideal para quem busca praticidade,
+                segurança e vantagens exclusivas. Com o cartão físico e recarregável, você tem a liberdade de controlar
+                seus gastos de maneira simples e eficiente. A cada três meses, você pode recarregar seu limite de
+                crédito de forma rápida e sem complicações, garantindo total controle do seu orçamento.
+            </p>
+            <p>
+                Com uma taxa de juros de apenas 5%, o Cartão OkuBank oferece um dos melhores custos-benefícios do
+                mercado, permitindo que você compre o que precisa com mais flexibilidade e menos preocupação. E o
+                melhor: esse cartão está disponível não só para funcionários públicos, mas para qualquer pessoa que
+                busque facilidade e inovação financeira, já que o OkuBank é 100% digital, com uma plataforma acessível e
+                intuitiva.
+            </p>
+            <p>
+                Com o Cartão de Crédito OkuBank, você aproveita todos os benefícios de um banco digital moderno, sem
+                taxas escondidas ou burocracia, além de contar com a segurança e a conveniência de um serviço pensado
+                para quem quer o melhor em termos de praticidade e custo. Venha para o OkuBank, o futuro da sua vida
+                financeira!
+            </p>
+            <p>Para ter acesso você precisa de abrir uma conta com a Okubank</p>
+            <a id="botão" target="_blank" href="#"> Quero ter uma Conta</a>
+        </div>
+        <div class="info" id="poupanca" style="display: none;">
+            <h3>Carteira de Poupança da okuBank</h3>
+            <p>Este serviço encontra-se <strong>Indisponivel</strong> no momento</p>
+        </div>
+        <div class="info" id="consultoria" style="display: none;">
+            <h3> Consultoria Personalizada na okuBank</h3>
+            <p>Este serviço encontra-se <strong>Indisponivel</strong> no momento</p>
+        </div>
+        <div class="info" id="relatorios" style="display: none;">
+            <h3>Relatórios Mensais</h3>
+            <br><br>
+            <img style="width: 100%; height: 450px;" src="./Img/relatorios.jfif">
+            <br>
+            <p>Tenha controle total das suas finanças com relatórios detalhados e simples de entender.</p>
+        </div>
+    </article>
+
+    <footer>
+        <div class="rodape">
+
+           
+            <br><br>
+            <div class="cardR">
+                <h3>Produtos</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./paravoce.html?section=cartao">Cartões</a></li>
+                    <li><a href="./paravoce.html?section=abertura">Contas</a></li>
+                    <li><a href="./paravoce.html?section=investimento">Investimentos</a></li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="cardR">
+                <h3>Serviços</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#">Consultoria</a></li>
+                    <li><a href="#">Planejamento</a></li>
+                    <li><a href="#">Seguros</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 OkuBank. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <a class="email"
+        href="mailto:helderjoaquim004@hotmail.com?subject=Ol%C3%A1,+gostaria+de+saber+mais+sobre+como+funciona+a+OkuBank&body=Muito+obrigado+por+entrar+em+contacto,+aguarde...."><img
+            style="height: 27px;" src="./logookubank/email.png" target="blank"> </a>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".Saiba");
+            const infoDivs = document.querySelectorAll(".info");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Esconder todas as divs
+                    infoDivs.forEach(div => div.style.display = "none");
+
+                    // Mostrar a div correspondente
+                    const targetId = button.getAttribute("data-target");
+                    const targetDiv = document.getElementById(targetId);
+                    if (targetDiv) {
+                        targetDiv.style.display = "block";
+                        targetDiv.scrollIntoView({ behavior: "smooth" }); // Rola até a div visível
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
